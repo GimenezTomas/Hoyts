@@ -1,0 +1,185 @@
+
+  :host {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    color: whitesmoke;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 8px 0;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .spacer {
+    flex: 1;
+  }
+
+  .toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #1e1f20;
+    color: white;
+    font-weight: 600;
+  }
+
+  .toolbar img {
+    margin: 0 16px;
+  }
+
+  .toolbar #twitter-logo {
+    height: 40px;
+    margin: 0 8px;
+  }
+
+  .toolbar #youtube-logo {
+    height: 40px;
+    margin: 0 16px;
+  }
+
+  .toolbar #twitter-logo:hover,
+  .toolbar #youtube-logo:hover {
+    opacity: 0.8;
+  }
+
+/*productos relacionados*/
+.funciones{
+    width: 90%;
+    padding: 5%;
+    padding-bottom: 2%;
+    margin-top: 5%;
+}
+
+.funciones h2{
+    text-transform: uppercase;
+    font-size: x-large;
+    font-weight: 800;
+}
+
+.funciones .content{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.funciones .funcion .img{
+  cursor: pointer;
+}
+
+#arrows{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+    height: 12%;
+    z-index: 2;
+}
+
+#arrows svg{
+    height: 100%;
+    width: 50%;
+    fill: black;
+    display: block;
+    margin: auto;
+}
+
+#back:hover, #foward:hover{
+    background-color: black;
+}
+
+#back svg:hover, #foward svg:hover{
+  fill: white;
+}
+
+#back{
+    position: absolute;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    transition: all .5s;
+    background-color: rgba(255, 255, 255, 0.842);
+}
+
+#foward{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    border-radius: 100%;
+    transition: all .5s;
+    background-color: rgba(255, 255, 255, 0.842);
+}
+
+.funciones .funciones2{
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+}
+
+.funciones .funciones2 .funcion img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.funciones .funciones2 .funcion{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.funciones .funciones2 .funcion .titulo{
+    background-color: rgba(0, 0, 0, 0.637);
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.puntos{
+    z-index: 1;
+    text-align: center;
+    margin-top: 5%;
+    width: 100%;
+  }
+  
+  .puntos .dot{
+    cursor: pointer;
+    height: 2px;
+    width: 20px;
+    margin: 2px 2px;
+    background-color: rgb(143, 143, 143);
+    display: inline-block;
+    border-radius: 0%;
+    transition: all .3s;
+  }
+
+  .puntos .selected{
+    height: 5px;
+    background-color: black;  
+  }
