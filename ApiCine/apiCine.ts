@@ -60,10 +60,14 @@ if(cluster.isWorker){
                   for (let j = 0; j < msg[2].length; j++) {
                     if (butacas[i] == msg[2][j]){
                       arrayButacasR.push(msg[2][j]);
-                      butacas.splice(i,1);
                     }
                   }
                 }
+                butacas = butacas.filter(function(ele){  
+                  if(!arrayButacasR.includes(ele)){
+                    return ele
+                  }
+                });
                 butacas = JSON.stringify(butacas);
                 let stringButacasR = JSON.stringify(arrayButacasR);
                 con.query("insert into reservas values(null,"+msg[3]+","+msg[1]+", '"+stringButacasR+"')", function (err, result, fields) {

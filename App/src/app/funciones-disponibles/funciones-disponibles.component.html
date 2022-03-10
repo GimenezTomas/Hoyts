@@ -36,8 +36,8 @@
                     </svg>
                 </div>
             </div>
-            <div class="funcion" *ngFor="let funcion of funciones">
-                <div class="img" routerLink="/reservar/{{funcion.id}}">
+            <div class="funcion" *ngFor="let funcion of funciones" routerLink="/reservar/{{funcion.id}}">
+                <div class="img">
                     <img src={{funcion.img}} alt="">
                 </div>
                 <div class="titulo">
@@ -49,4 +49,4 @@
             <span class="dot" *ngFor="let i of showTabs(); let index=index " [ngClass]="{'selected': index == this.dotSelected - 1}" (click)="mover2(index)"></span>
         </div>
     </div>
-</div>  
+</div>
