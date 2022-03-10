@@ -6,8 +6,8 @@ var pool = mysql.createPool({
     poolLimit: 10,
     host: 'localhost',
     user: 'root',
-    password: 'alumno1234',
-    database: 'cine'
+    password: 'TomSoyer5',
+    database: 'hoyts'
 });
 var cluster = require('cluster');
 if (cluster.isWorker) {
@@ -174,7 +174,7 @@ else {
     var port_1 = 3000;
     app.use(cors());
     app.listen(port_1, function () {
-        console.log("Se levanto el server en http://localhost:" + port_1);
+        console.log("Se levanto el server en http://localhost:".concat(port_1));
     });
     // Configuro algunas cosas del servidor
     app.use(bodyparser.json());

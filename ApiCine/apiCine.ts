@@ -8,8 +8,8 @@ var pool = mysql.createPool({
   poolLimit: 10,
   host     : 'localhost',
   user     : 'root',
-  password : 'alumno1234',
-  database : 'cine'
+  password : 'TomSoyer5',
+  database : 'hoyts'
 });
 const cluster = require('cluster');
 
